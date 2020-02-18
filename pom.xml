@@ -1,0 +1,23 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.lists.utils</groupId>
+    <artifactId>jlistsutils</artifactId>
+    <version>2.0</version>
+    <packaging>jar</packaging>
+
+    <name>JListsUtils</name>
+    <description>Functional-like list utils for Java</description>
+    <url>https://github.com/carloalbertobarbano/JListsUtils</url>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>hhttps://github.com/carloalbertobarbano/JListsUtils</url>
+    </scm>
+</project>
