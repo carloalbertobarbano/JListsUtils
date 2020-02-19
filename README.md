@@ -1,6 +1,6 @@
 # JListsUtils
 
-Oh, lists filters are so cool..let's do it
+Oh, lists filters are so cool..let's use them
 
 ```Java
 List<Customer> customersWithMoreThan100Points = customers
