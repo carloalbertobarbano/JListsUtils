@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JListsUtils.iml" filepath="$PROJECT_DIR$/JListsUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jlistsutils.iml" filepath="$PROJECT_DIR$/jlistsutils.iml" />
     </modules>
   </component>
 </project>
