@@ -1,6 +1,7 @@
 package org.lists.utils;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Lists {
@@ -10,6 +11,28 @@ public class Lists {
         for (T t : list)
             if (criteria.apply(t))
                 result.add(t);
+
+        return result;
+    }
+
+    public static <T> List<T> filter(T list[], Predicate<Boolean, T> criteria) {
+        List<T> result = new ArrayList<>();
+
+        for (T t : list)
+            if (criteria.apply(t))
+                result.add(t);
+
+        return result;
+    }
+
+    public static <T> List<T> filter(Iterator<T> iterator, Predicate<Boolean, T> criteria) {
+        List<T> result = new ArrayList<>();
+
+        while (iterator.hasNext()) {
+            T t = iterator.next();
+            if (criteria.apply(t))
+                result.add(t);
+        }
 
         return result;
     }
@@ -40,3 +63,4 @@ public class Lists {
         return r;
     }
 }
+
