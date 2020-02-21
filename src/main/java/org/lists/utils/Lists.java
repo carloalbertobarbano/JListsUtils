@@ -46,6 +46,25 @@ public class Lists {
         return result;
     }
 
+    public static <S, T> List<T> map(S list[], Predicate<T, S> transform) {
+        List<T> result = new ArrayList<>();
+
+        for(S s : list)
+            result.add(transform.apply(s));
+
+        return result;
+    }
+
+    public static <S, T> List<T> map(Iterator<S> iterator, Predicate<T, S> transform) {
+        List<T> result = new ArrayList<>();
+
+        while (iterator.hasNext()) {
+            result.add(transform.apply(iterator.next()));
+        }
+
+        return result;
+    }
+
     public static <T> Boolean satisfies(List<T> list, Predicate<Boolean, T> criteria) {
         for (T t : list)
             if (criteria.apply(t))
