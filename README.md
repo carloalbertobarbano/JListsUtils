@@ -18,3 +18,24 @@ List<Customer> customersWithMoreThan100Points = Lists.filter(customers, c -> c.g
 ```
 
 Yes, I don't like docs.
+
+
+## Maven dep
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+
+<dependencies>
+    <dependency>
+        <groupId>com.github.carloalbertobarbano</groupId>
+        <artifactId>JListsUtils</artifactId>
+        <version>4335e11fda</version>
+    </dependency>
+</dependencies>
+```
